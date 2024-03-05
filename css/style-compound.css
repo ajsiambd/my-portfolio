@@ -1,0 +1,313 @@
+.img-fluid{
+  width:350px;
+  border-radius: 5px;
+}
+*{
+    background-color: black;
+    font-family: 'poppins', sans-serif;
+    color: white;
+}
+.primary-color{
+    color: rgb(0, 161, 161);
+}
+
+.big{
+  margin-top: 100px;
+  font-size: 80px;
+}
+
+.margin-50{
+  margin: 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+.color{
+  color: rgb(0, 208, 139);
+}
+  /* Apply a background color to the body */
+
+  
+  /* Center the header content */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .glow{
+    text-shadow: 0 0 10px rgb(0, 177, 177); 
+  }
+  /* Style the h1 element */
+  .animation {
+    font-size: 28px;
+    color: white;
+  }
+  
+  /* Keyframes for the text glow animation */
+  @keyframes glowText {
+    0% {
+      text-shadow: 0 0 10px aqua; /* Initial state of the text shadow */
+    }
+    100% {
+      text-shadow: 0 0 20px aqua; /* Final state of the text shadow */
+    }
+  }
+  
+  /* Style the span inside h1 with a different color */
+  .primary-color {
+    color: aqua;
+  }
+  
+  /* Style the navigation */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+  }
+  
+  nav ul li a:hover {
+    color:aqua; /* Color of the glow */
+  }
+  
+  nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color:aqua; /* Color of the glow */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  /* Animation for the navigation */
+  nav {
+    animation: glowNav 1s infinite alternate; /* Apply navigation glow animation */
+    margin:50px 50px 100px 50px
+  }
+  
+  
+  
+  /* Animation for the h1 on hover */
+  .animation:hover {
+    animation: glowText 1.5s infinite alternate; /* Apply text glow animation */
+  }
+
+  .h-100{
+    font-size: 70px;
+    text-align: center;
+    margin: 0 100px 20px 100px;
+  }
+  .typing-animation {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid aqua; /* Thicker cursor */
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font */
+    font-size: 18px; /* Adjust font size as needed */
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  .ten-px-font{
+    font-size: 20px;
+  }
+.margin-left{
+  margin-left: 480px;
+}
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  /* About */
+  .about h1{
+    text-align: center;
+    margin:120px 500px 50px 500px;
+    padding: 10px;
+    border: 1px solid rgb(0, 208, 139);
+    border-radius: 10px;
+    animation: one;
+    animation-duration: 10sec;
+  }
+  .about h1:hover{
+    border: 1px solid aqua;
+  }
+
+ .font{
+  font-family: 'Courier New', Courier, monospace;
+ }
+ .text-animation{
+  animation:textanimation infinite;
+  animation-duration: 10s;
+ }
+ @keyframes textanimation {
+   0%{
+    color: aqua;
+   }
+   25%{
+    color: rgb(0, 173, 173);
+   }
+   50%{
+    color: rgb(18, 195, 195);
+   }
+   100%{
+    color: rgb(0, 255, 255);
+   }
+}
+.btn{
+  color:black;
+  background-color: rgb(115, 255, 255);
+  padding: 10px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.active{
+  color:rgb(0, 208, 139);
+}
+.btn:hover{
+  color:black;
+  background-color:aqua;
+  padding: 10px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.text-none{
+  text-decoration: none;
+}
+.flex-center{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.primary-hover:hover{
+  border: 1px solid rgb(0, 161, 161) ;
+  text-shadow: 0 0 10px rgb(0, 177, 177);
+}
+.input-box{
+  height: 200px;
+}
+.icons{
+  margin-left: 200px;
+}
+.icons img{
+  width:50px;
+  padding: 10px;
+}
+.font-10px h4{
+  font-size: 20px;
+}
+.footer input{
+  border-radius: 10px;
+  border: 1px solid rgb(0, 208, 139);
+  font-family: 'Courier New', Courier, monospace;
+  color: aqua;
+  font-size: 20px;
+}
+.footer h4{
+  color: rgb(0, 208, 139);
+}
+.flex-space-beetwen{
+  display: flex;
+  justify-content: space-between;
+}
+.contact{
+  margin-left: 100px;
+  color: aqua;
+}
+.contact p{
+  color: aqua;
+}
+.hire{
+  margin-right: 100px;
+}
+.hire input{
+  margin: 10px;
+  width: 400px;
+}
+.submit:hover{
+  background: rgb(0, 208, 139);
+  color:white;
+  font-weight: 700;
+}
+@keyframes primary1 {
+  0% {
+    opacity: 0;
+    transform: translateX(20px); /* Start position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* End position */
+  }
+}
+
+@keyframes primary1 {
+  0% {
+    transform: translateX(100%); /* Start position outside viewport */
+  }
+  100% {
+    transform: translateX(0); /* End position */
+  }
+}
+
+@keyframes fadeInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.primary1 {
+  opacity: 0;
+  animation: fadeInFromRight 1s ease forwards;
+  animation-delay: 2s;
+}
+
+.primary2 {
+  opacity: 0;
+  animation: fadeInFromLeft 1s ease forwards;
+}
+
+
